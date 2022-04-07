@@ -1,766 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Guru Nanak Welfare</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>Guru Nanak Welfare</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet ">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <body>
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
-            <img class="position-absolute top-50 start-50 translate-middle" src="img/icons/icon-1.png" alt="Icon">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="img/icons/icon-1.png" alt="Icon">
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">WAHEGURU</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
         </div>
-        <!-- Spinner End -->
+    </nav>
+    <!-- Navbar End -->
 
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">WAHEGURU</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Roles</a>
-                        <div class="dropdown-menu border-0 m-0">
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="project.html" class="dropdown-item">Our Projects</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+
+    <!-- sliders Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-1.jpeg'>">
+                <img class="img-fluid" src="img/slider-1.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                            </div>
                         </div>
-                    </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Navbar End -->
-
-
-        <!-- Carousel Start -->
-        <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="owl-carousel header-carousel position-relative">
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-1.jpeg'>">
-                    <img class="img-fluid" src="img/slider-1.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-2.jpeg'>">
+                <img class="img-fluid" src="img/slider-2.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-2.jpeg'>">
-                    <img class="img-fluid" src="img/slider-2.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-3.jpeg'>">
+                <img class="img-fluid" src="img/slider-3.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-3.jpeg'>">
-                    <img class="img-fluid" src="img/slider-3.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-5.png'>">
+                <img class="img-fluid" src="img/slider-5.png" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-4.jpeg'>">
-                    <img class="img-fluid" src="img/slider-4.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-5.png'>">
-                    <img class="img-fluid" src="img/slider-5.png" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-6.jpeg'>">
+                <img class="img-fluid" src="img/slider-6.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-6.jpeg'>">
-                    <img class="img-fluid" src="img/slider-6.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-7.jpeg'>">
+                <img class="img-fluid" src="img/slider-7.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-7.jpeg'>">
-                    <img class="img-fluid" src="img/slider-7.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-8.jpeg'>">
+                <img class="img-fluid" src="img/slider-8.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-8.jpeg'>">
-                    <img class="img-fluid" src="img/slider-8.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-9.jpeg'>">
-                    <img class="img-fluid" src="img/slider-9.jpeg" alt="">
-                    <div class="owl-carousel-inner">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <!-- <h1 class="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a> -->
-                                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/slider-9.jpeg'>">
+                <img class="img-fluid" src="img/slider-9.jpeg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
+    </div>
+    <!-- sliders End -->
 
-
-        <!-- Facts Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container pt-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                            <div class="fact-icon">
-                                <img src="img/icons/icon-2.png" alt="Icon">
-                            </div>
-                            <h3 class="mb-3">Design Approach</h3>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                        </div>
+    <!-- About guru nanak Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/about-1.jpeg" alt="">
+                        <img class="img-fluid" src="img/about-2.jpeg" alt="">
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                            <div class="fact-icon">
-                                <img src="img/icons/icon-3.png" alt="Icon">
-                            </div>
-                            <h3 class="mb-3">Innovative Solutions</h3>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h4 class="section-title">History</h4>
+                    <h1 class="display-5 mb-4">BABA GURU NANAK</h1>
+                    <p> बंधुओं ! हम मौत को बुरा नहीं कहते, यदि हम जानते कि वास्तव में मरा कैसे जाता है </p>
+                    <p class="mb-4">
+                        <b>" The spiritual leader of sikhism "</b>
+                        <br/>
+                        His political, social and spiritual beliefs, which were based on love, equality, fraternity and virtue
+                    </p>
+                    <p class="mb-4 section-title">" Wich duniya sev kamaaiye, taan dargeh baisen paaiye "</p>
+                    <p class="mb-4">
+                        the 'only service done within this world shall wins us a peace in the court of the Lord.'
+                        His followers were taught to annihilate the thought of self and to utilize all their energies in the service of humanity.
+                    </p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                            <h1 class="display-1 mb-n2" data-toggle="counter-up">70</h1>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-                            <div class="fact-icon">
-                                <img src="img/icons/icon-4.png" alt="Icon">
-                            </div>
-                            <h3 class="mb-3">Project Management</h3>
-                            <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <div class="ps-4">
+                            <h3>Guru Nanak is the founder of Sikhism</h3>
+                            <h3>ਵੰਡ ਛਕੋ</h3>
+                            <h4>'Share with others, help those who are in need, so you may live together'</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- Facts End -->
+        </div>
+    </div>
+    <!-- About guru nanak End -->
 
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
+    <!-- Service Start -->
+    <div class="container pt-5">
+        <div class="d-flex flex-column text-center mb-5">
+            <h2 class="text-primary mb-3">Our services for humanity</h2>
+            <h1 class="m-0">" We are sikh, we serve for the community, serve for the world "</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-1.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Thaali</h4>
+                    </div>
+                    <div class="card-footer">
+                        It's our tradition to place the food in that form, we helps to the needy persons and to make their souls pure and happier.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-2.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Food</h4>
+                    </div>
+                    <div class="card-footer">
+                        Food is the basic need of everyone, If God gives us then it's our duty to serve for the needy for the community for the nation.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-3.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp filteration Plant</h4>
+                    </div>
+                    <div class="card-footer">
+                        Drinking water is the basic need of every human and we will develop many of filteration plants of pure drinking water.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-4.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Transport Service</h4>
+                    </div>
+                    <div class="card-footer">
+                        We provide transportation service for our visitors, to facilitate them in the traveling from shelter homes to the Gurdwara.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-5.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Ambulance Service</h4>
+                    </div>
+                    <div class="card-footer">
+                        Ambulance service is important factor everywhere, we also provide ambulance service in Gurdwara for our visitors.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-6.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Medical Treatment</h4>
+                    </div>
+                    <div class="card-footer">
+                        In this time, covid and so many diseases are arround us, we need to fight and protect our visitors against the diseases.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-7.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Shelter Homes</h4>
+                    </div>
+                    <div class="card-footer">
+                        We are providing shelter homes to the visitors and the homeless persons arround the Gurdwara Janam Asthan Nankana Sahib.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-8.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Wheel Chairs</h4>
+                    </div>
+                    <div class="card-footer">
+                        We are providing wheel chairs to disable persons, this will fullfil desires to visit Gurdwara and can easily offer their prayers.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card mb-2 p-3">
+                    <img class="card-img-top" src="img/service-9.jpeg" alt="">
+                    <div class="card-body bg-secondary d-flex align-items-center p-0">
+                        <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
+                        <h4 class="card-title text-white text-truncate m-0"> &nbsp Education</h4>
+                    </div>
+                    <div class="card-footer">
+                        Education is the basic need of our community, we are supporting to our community's children for lower and higher educations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- langer Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-start">
+                        <img class="flex-shrink-0" src="img/icons/icon-1.png" alt="Icon">
+                        <div class="ms-4">
+                            <h1 class="section-title mt-3">Gurdwara Janam Asthan</h1>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h1 class="section-title mr-5">God Chooses Us!</h1>
+                    <h3 class="display-5 mb-4">We are providing langer to the all visitors, those who come to offer their prayers in Gurdwara</h3>
+                    <p class="mb-4">The Langer or free community kitchen is a hallmark of our sikh faith. It is designed for equality between all people of the world regardless of religion, caste, colour, 
+                        creed, age, gender or social status, to eliminate the extreme povetry in the world.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <!-- <img class="flex-shrink-0" src="img/icons/icon-1.png" alt="Icon"> -->
+                                <div class="ms-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="img/about-3.jpeg" alt="">
+                        <img class="img-fluid" src="img/about-4.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- langer End -->
+
+
+    <!-- other Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h2 class="section-title">Other Projects</h2>
+                <h1 class="display-5 mb-4">Here are some other projects we are working on!</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h3 class="m-0">01. Filter Plants</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h3 class="m-0">02. Security System</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h3 class="m-0">03. Cleaning System</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">RO filteration and purification water treatment plant</h1>
+                                    <p class="mb-4"><b>We are in dire need of a water treatment filteration plant at this time, </b>because we don't have a single filteration plant at the moment. we have the biggest problem of clean water right now. we urgently need 30,000 dollars to meet the needs of this plant</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-1.jpeg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">We needed to improve our security system</h1>
+                                    <p class="mb-4">Serving the communitites in which we live is part of the basic tenets of sikhism. Gurdwara extended their outreach and maintain a connection with local community government</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Security cameras</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Security barriers</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Security officers</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Walk through gates</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-2.jpeg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">Cleaning in Gurdwara is a main factor</h1>
+                                    <p class="mb-4">Cleanliness is a part of sikh philosophy. Clean surroundings contribute a lot in making mind and soul clean. A person feels good and can meditate properly if his surroundings are clean.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Staff</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Equipments</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Cleaning materials</b></p>
+                                    <p><i class="fa fa-check text-primary me-3"></i><b>Fragrances</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- other Project End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="section-title">Team Members</h1>
+                <h3 class="display-5 mb-4">Our team is serving their all energies for the Gurdwara Janam Asthan</h3>
+            </div>
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-1.jpeg" alt="">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Sardar buphaal singh</h3>
+                            <span class="text-primary">Langer Incharge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-2.jpeg" alt="">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Sardar Jagat Singh</h3>
+                            <span class="text-primary">Gurdwara Incharge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-3.jpeg" alt="">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Sardar Charanpaal Singh</h3>
+                            <span class="text-primary">Security Incharge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-4.jpeg" alt="">
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Sardar Amardeep Singh</h3>
+                            <span class="text-primary">Controller of Sacred spaces</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Client Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Donations Donors</h4>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-1.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Sardar Amanpreet Singh</h3>
+                    <span class="text-primary">From UK</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-2.png' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Sardar Deepinder Singh</h3>
+                    <span class="text-primary">From Canada</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-3.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Amardeep Singh</h3>
+                    <span class="text-primary">From Canada</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-4.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Jasbir Singh</h3>
+                    <span class="text-primary">From Belgium</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-5.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Preet Kaur</h3>
+                    <span class="text-primary">From Belgium</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-6.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Balwant Kaur</h3>
+                    <span class="text-primary">From Belgium</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-7.jpg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Balbir Kaur</h3>
+                    <span class="text-primary">From Spain</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-8.jpeg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Baldav Singh</h3>
+                    <span class="text-primary">From Italy</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/client-9.jpg' alt=''>">
+                    <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
+                    <h3>Sardar Baldav virdi</h3>
+                    <span class="text-primary">From USA</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- client End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12">
+                    <h3 class="text-light mb-4">INFO</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Gurudwara Janam Asthan, Nankana Sahib</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>gurunanakwelfare.pk@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-credit-card text-primary me-3"></i>Abc 123</p>
+                    <p class="mb-2"><i class="fa fa-credit-card text-primary me-3"></i>Abc 123</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h3 class="text-light mb-4">Services</h3>
+                    <a class="btn btn-link" href="service.html">Food</a>
+                    <a class="btn btn-link" href="service.html">Education</a>
+                    <a class="btn btn-link" href="service.html">Shelter homes</a>
+                    <a class="btn btn-link" href="service.html">Filter plants</a>
+                    <a class="btn btn-link" href="service.html">Transportation</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img">
-                            <img class="img-fluid" src="img/about-1.jpeg" alt="">
-                            <img class="img-fluid" src="img/about-2.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h4 class="section-title">History</h4>
-                        <h1 class="display-5 mb-4">BABA GURU NANAK</h1>
-                        <p> ਗੁਰ ਗੋਵਿੰਦੁ ਗੋੁਵਿੰਦੁ ਗੁਰੂ ਹੈ ਨਾਨਕ ਭੇਦੁ ਨ ਭਾਈ ॥੪॥੧॥੮॥ </p>
-                        <p class="mb-4">" The Guru is God, and God is the Guru, O Nanak; there is no difference between the two, O Siblings of Destiny. "</p>
-                        <p class="mb-4 section-title">" Wich duniya sev kamaaiye, taan dargeh baisen paaiye "</p>
-                        <p class="mb-4">
-                            the 'only service done within this world shall wins us a peace in the court of the Lord.'
-                            His followers were taught to annihilate the thought of self and to utilize all their energies in the service of humanity.
-                        </p>
-                        <div class="d-flex align-items-center mb-5">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
-                                <h1 class="display-1 mb-n2" data-toggle="counter-up">70</h1>
-                            </div>
-                            <div class="ps-4">
-                                <h3>Guru Nanak is the founder of Sikhism</h3>
-                                <h3>ਵੰਡ ਛਕੋ</h3>
-                                <h4>'Share with others, help those who are in need, so you may eat together'</h4>
-                            </div>
-                        </div>
-                        <!-- <a class="btn btn-primary py-3 px-5" href="">Read More</a> -->
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">gurunanakwelfare</a>, All Right Reserved.
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+    <!-- Footer End -->
 
 
-        <!-- Service Start -->
-        <div class="container pt-5">
-            <div class="d-flex flex-column text-center mb-5">
-                <h2 class="text-primary mb-3">Our services for humanity</h2>
-                <h1 class="m-0">" We are sikh, we serve for the nation, serve for the world "</h1>
-            </div>
-            <div class="row pb-3">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-1.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Thaali</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-2.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Food</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-3.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp filteration Plant</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-4.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Transport Service</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-5.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Ambulance Service</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-6.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Medical Treatment</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-7.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Shelter Homes</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-8.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Wheel Chairs</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card mb-2 p-3">
-                        <img class="card-img-top" src="img/service-9.jpeg" alt="">
-                        <div class="card-body bg-secondary d-flex align-items-center p-0">
-                            <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style="width: 45px; height: 45px;"></h3>
-                            <h4 class="card-title text-white text-truncate m-0"> &nbsp Education</h4>
-                        </div>
-                        <div class="card-footer">
-                            Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est magna diam eos, rebum sit vero stet ipsum justo et.
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- service end -->
-
-        <!-- Feature Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h2 class="section-title">God Chooses Us!</h2>
-                        <h1 class="display-5 mb-4">We provided langer to all the community, those who come to see the Gurdwara</h1>
-                        <p class="mb-4">The Langer or free community kitchen is a hallmark of our sikh faith. It is designed for equality between all people of the world regardless of religion, caste, colour, 
-                            creed, age, gender or social status, to eliminate the extreme povetry in the world.
-                        </p>
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="d-flex align-items-start">
-                                    <img class="flex-shrink-0" src="img/icons/icon-1.png" alt="Icon">
-                                    <div class="ms-4">
-                                        <h2 class="section-title">Gurdwara Janam Asthan</h2>
-                                        <p class="mb-0">
-                                            In Gurdwara, we provided langer to all the people, visitors, needy persons and all over the community.
-                                            In our kitchen, we had staff the participation of women and children in a task of service for mankind. 
-                                            Our women play an important role in the preparation of meals, and the children help in serving the food to the pangat. 
-                                            Langer also teaches the etiquette of sitting and eating in a community situation, which has played a great part in upholding the virtue 
-                                            of sameness of all human beings; providing a welcome secure and protected sanctuary.
-                                            <b>To continue and perform it more greatly we need you, your fundings more illuminate our work.</b> 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-img">
-                            <img class="img-fluid" src="img/about-3.jpeg" alt="">
-                            <img class="img-fluid" src="img/about-4.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feature End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-        <!-- Project Start -->
-        <div class="container-xxl project py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h2 class="section-title">Other Projects</h2>
-                    <h1 class="display-5 mb-4">Here are some other projects we are working on!</h1>
-                </div>
-                <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="col-lg-4">
-                        <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                                <h3 class="m-0">01. Security System</h3>
-                            </button>
-                            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                                <h3 class="m-0">02. Cleaning System</h3>
-                            </button>
-                            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                                <h3 class="m-0">03. Filter Plants</h3>
-                            </button>
-                            <!-- <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                                <h3 class="m-0">04. Empowering the community</h3>
-                            </button> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="tab-content w-100">
-                            <div class="tab-pane fade show active" id="tab-pane-1">
-                                <div class="row g-4">
-                                    <div class="col-md-6" style="min-height: 350px;">
-                                        <div class="position-relative h-100">
-                                            <img class="position-absolute img-fluid w-100 h-100" src="img/project-1.jpeg"
-                                                style="object-fit: cover;" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h1 class="mb-3">We needed to improve our security system</h1>
-                                        <p class="mb-4">Serving the communitites in which we live is part of the basic tenets of sikhism. Gurdwara extended their outreach and maintain a connection with local community government</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Security cameras</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Security barriers</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Security officers</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Walk through gates</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab-pane-2">
-                                <div class="row g-4">
-                                    <div class="col-md-6" style="min-height: 350px;">
-                                        <div class="position-relative h-100">
-                                            <img class="position-absolute img-fluid w-100 h-100" src="img/project-2.jpeg"
-                                                style="object-fit: cover;" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h1 class="mb-3">Cleaning in Gurdwara is main factor</h1>
-                                        <p class="mb-4">Cleanliness is a part of sikh philosophy. Clean surroundings contribute a lot in making mind and soul clean. A person feels good and can meditate properly if his surroundings are clean.</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Staff</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Equipments</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Cleaning materials</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Fragrances</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab-pane-3">
-                                <div class="row g-4">
-                                    <div class="col-md-6" style="min-height: 350px;">
-                                        <div class="position-relative h-100">
-                                            <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.jpeg"
-                                                style="object-fit: cover;" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h1 class="mb-3">Filtered water is the basic need of every human</h1>
-                                        <p class="mb-4">Raw water contains undesirable sediments, colour, algae(which produce a taste and smell) and other harmful organisms. The water filteration plant is designed to remove the undesirable matter, and produce water fit and safe for drinking.</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Filter Plants</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Water Treatment Components</b></p>
-                                        <p><i class="fa fa-check text-primary me-3"></i><b>Commercial RO Plants</b></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="tab-pane fade" id="tab-pane-4">
-                                <div class="row g-4">
-                                    <div class="col-md-6" style="min-height: 350px;">
-                                        <div class="position-relative h-100">
-                                            <img class="position-absolute img-fluid w-100 h-100" src="img/project-4.jpeg"
-                                                style="object-fit: cover;" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
-                                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
-                                        <p><i class="fa fa-check text-primary me-3"></i>Project Management</p>
-                                        <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project End -->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h4 class="section-title">Team Members</h4>
-                    <h1 class="display-5 mb-4">We all are members and a team, we are "sikh".</h1>
-                </div>
-                <div class="row g-0 team-items">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item position-relative">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-1.jpeg" alt="">
-                            </div>
-                            <div class="bg-light text-center p-4">
-                                <h3 class="mt-2">Sardar buphaal singh</h3>
-                                <span class="text-primary">Langer incharge</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item position-relative">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-2.jpeg" alt="">
-                            </div>
-                            <div class="bg-light text-center p-4">
-                                <h3 class="mt-2">Sardar Jagat Singh</h3>
-                                <span class="text-primary">Gurdwara Incharge</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item position-relative">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-3.jpeg" alt="">
-                            </div>
-                            <div class="bg-light text-center p-4">
-                                <h3 class="mt-2">Sardar Charanpaal Singh</h3>
-                                <span class="text-primary">Security Incharge</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item position-relative">
-                            <div class="position-relative">
-                                <img class="img-fluid" src="img/team-4.jpeg" alt="">
-                            </div>
-                            <div class="bg-light text-center p-4">
-                                <h3 class="mt-2">Sardar Amardeep Singh</h3>
-                                <span class="text-primary">Controller of Sacred spaces</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-
-
-        <!-- Appointment Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h4 class="section-title">Appointment</h4>
-                        <h1 class="display-5 mb-4">Make An Appointment To Start Your Dream Project</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="d-flex">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-2x fa-phone-alt text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Call Us Now</p>
-                                        <h3 class="mb-0">+012 345 6789</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="d-flex">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
-                                        <i class="fa fa-2x fa-envelope-open text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Mail Us Now</p>
-                                        <h3 class="mb-0">info@example.com</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row g-3">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-select" style="height: 55px;">
-                                    <option selected>Choose Service</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 2</option>
-                                    <option value="3">Service 3</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control datetimepicker-input"
-                                        placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control datetimepicker-input"
-                                        placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Appointment End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h4 class="section-title">Donations</h4>
-                    <h1 class="display-5 mb-4">Who gives us donations are respectfully hidden</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
-                        <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
-                        <h3>Sardar Amanpreet Singh</h3>
-                        <span class="text-primary">Hotel Owner</span>
-                    </div>
-                    <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
-                        <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
-                        <h3>Sardar Deepinder Singh</h3>
-                        <span class="text-primary">Civil Engineer</span>
-                    </div>
-                    <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
-                        <p class="fs-5">We can't help everyone, but, everyone can help someone.</p>
-                        <h3>Gurcharan Singh</h3>
-                        <span class="text-primary">Hotel Owner</span>
-                    </div>
-                </div>      
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 col-md-12">
-                        <h3 class="text-light mb-4">INFO</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Gurudwara Janam Asthan, Nankana Sahib</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                        <p class="mb-2"><i class="fa fa-credit-card text-primary me-3"></i>Abc 123</p>
-                        <p class="mb-2"><i class="fa fa-credit-card text-primary me-3"></i>Abc 123</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <h3 class="text-light mb-4">Services</h3>
-                        <a class="btn btn-link" href="service.html">Food</a>
-                        <a class="btn btn-link" href="service.html">Education</a>
-                        <a class="btn btn-link" href="service.html">Shelter homes</a>
-                        <a class="btn btn-link" href="service.html">Filter plants</a>
-                        <a class="btn btn-link" href="service.html">Transportation</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a href="#">gurunanakwelfare</a>, All Right Reserved.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/tempusdominus/js/moment.min.js"></script>
-        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
 </html>
